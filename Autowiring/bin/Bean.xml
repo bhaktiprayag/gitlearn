@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="broker" class="com.bk.java.Broker" autowire="byName">
+           <property name="id" value="101"/>
+           <property name="name" value="Shiva"/>
+</bean>
+
+<bean id="addr1" class="com.bk.java.Address">
+          <property name="OfficeAdr" value="Kothrud"/>
+          <property name="Pincode" value="411022"/>
+</bean>
+
+<bean id="addr2" class="com.bk.java.Address">
+          <property name="OfficeAdr" value="Bavdhan"/>
+          <property name="Pincode" value="411021"/>
+</bean>
+
+   </beans>
